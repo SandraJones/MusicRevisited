@@ -1,107 +1,47 @@
 .navigation {
-  background-color: pink;
+  background-color: #FFB4B0;
   border: 2px solid grey;
-  padding: 10;
   padding: 10px;
   font-size: .8em;
-  width: 700px;
+  height: 30px;
+  width: 93%;
 }
-#topgroup {
-  border: 2px solid black ;
-  margin-right: 300px;
+#one {
+  display: inline-block;
 }
-section {
-  border: 1px solid grey;
+#two {
+  display: inline-block;
 }
-
-.container {
-  background-color: pink;
-  height: 50px;
+label, select {
+  display: block;
 }
 fieldset {
-  background-color: blue;
-  margin-right: 0;
+  background-color: #4DD7FA;
+  margin-right: 1em;
 }
-.first {
-  margin: 2em;
+#box {
+  background-color: #FEFAC0;
+  border: 1px solid grey;
+  margin-left: 1em;
+  padding: 0em 0em 0em 1em;
+  display:inline-block;
+  width: 50%;
 }
 .options {
-  color: light blue;
-  width: 30%;
-  border-radius: 10%;   
+  display: inline-block;
+  width: 40%;
 }
-.box {
-  width: 95%;
+.wrap {
   display: flex;
 }
-
-.artist {
-  display: inline-block;
-
+.hidden {
+  visibility: hidden;
 }
-.song {
-  font-size: 20px;
+.visible {
+  visibility: visible;
 }
-.firstfirst {
-  display: inline;
-  float: right;
-  font-size: 14px;
+#add-view {
+  position: absolute; 
+  top: 200px;
+  left:100px;
 }
-.artist1 {
-  display: inline;
-  font-size: 14px;
-}
-.artist2 {
-  display: inline;
-  font-size: 14px;
-}
-.artist3 {
-  display: block;
-  font-size: 14px;
-}
-.options {
-  display: inline-block;  
-}
-.content1 {
-  font-size: 30px;
-  padding-left: 10 px;
-  text-indent: 2em;
-  float: left;
-}
-.para {
-  padding-left: 15 px;
-  display: inline;
-}
-.content2 {
-  text-indent: 2em;
-  float: left;
-}
-#wrap{
-    width: 400px;
-    margin: 0 auto;
-    dsplay: block;
-}
-#box{
-    float:right;
-    width:400px;
-    height:210px;
-    background-color: yellow;
-    border:1px solid grey;
-    margin-right: 87em;
-    display: block;
-    overflow: auto;
-    padding-top: 1em;
-}
-.options {
-  float: left;
-  width: 300px;
-  margin: 10px;
-}
-.box {
-  float: left;
-  width: 620px;
-  margin: 10px;
-}
-/*input {
-  display: block;
-}*/
