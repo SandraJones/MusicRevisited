@@ -1,3 +1,9 @@
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
 .navigation {
   background-color: #FFB4B0;
   border: 2px solid grey;
@@ -33,12 +39,6 @@ fieldset {
 }
 .wrap {
   display: flex;
-}
-.hidden {
-  visibility: hidden;
-}
-.visible {
-  visibility: visible;
 }
 #add-view {
   position: absolute; 

@@ -29,32 +29,48 @@ for (let i=0; i<songs.length; i++) {
 
 //gather song input from  user
 let createNewMusic = function(){
-	console.log("this function works", createNewMusic);
+	// console.log("this function works", createNewMusic);
 	let songInput = document.getElementById("Song").value;
 	let artistInput = document.getElementById("Artist").value;
 	let albumInput = document.getElementById("Album").value;
   yourArray = [songInput, artistInput, albumInput];
-  console.log(expandedSongs);
-
-  console.log("yourArray", yourArray );
-  songs.push(yourArray);
-  console.log("songs", songs);
-	// populateDOM(newSongsList);
+  let newSongString = toString(yourArray);
+  songs.push(newSongString);
+  console.log("songs",songs);
+  populateDOM();
 }
 
-
-// function populateDOM() {
-// 	for (let i = 0; i < newSongsList.length; i++) {
-// 	  //print this straight to the DOM
-// 	  let person = people[i];
-// 	  } 
-// 	addClickEvent();  
-// }
-
+function toString(arrayToConvert) {
+  console.log("arrayToConvert", arrayToConvert);
+  let songString = arrayToConvert[0] + " ";
+  songString += arrayToConvert[1] + " ";
+  songString += arrayToConvert[2];
+  return songString;
+}
+ 
+  // // console.log("new Songs", expandedSongs);
+  // console.log("yourArray", yourArray );
+  
+  // console.log("songs", songs);
+  // // console.log("expandedSongs", expandedSongs);
+  // // expandedSongs.push("yourArray");
 
 addBtn.addEventListener("click", createNewMusic);
+  
+// populateDOM(newSongsList);
+function populateDOM() {
+  for (let i = 0; i < people.length; i++) {
+    //print this straight to the DOM, so page is pulled up and see cards immediately
+    let songs = songs[i];
+    //as we go thru the function we are going to build one card at a time
+    createNewMusic(songs);
+    } 
+  addClickEvent();
+}
 
-//
-// function buildCard(person) {
-//   container.innerHTML += `<person class="card"><header>${person.title} ${person.name} </header><section><p class="bio">${person.bio}</p><img src="${person.image}"></section><footer>${person.lifespan.birth}-${person.lifespan.death}</footer></person>` 
+// function buildMusic(songs) {
+//   box.innerHTML += `<div id="box"><div class="content1"><p class="para">Song Name</p></div><article class="content2"><p class="para">Todd Rundgren  |  Wizard  |  Rock</p></article><div class="content1"><p class="para">Song Name</p></div><article class="content2"><p class="para">Neil Young  |  Rust Never Sleeps  |  Rock</p></article><div class="content1"> <p class="para">Song Name</p></div><article class="content2"><p class="para">Bad Company  |  Bad Company  |  Rock</p>
+// </article></div><div id ="add-view"><header>${person.title} ${person.name} </header><section><p class="bio">${person.bio}</p><img src="${person.image}"></section><footer>${person.lifespan.birth}-${person.lifespan.death}</footer></person>` 
 // };
+
+
