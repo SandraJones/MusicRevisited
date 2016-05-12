@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SandraJones/MusicRevisited#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.1",
     "gulp-watch": "^4.3.5"
   }
