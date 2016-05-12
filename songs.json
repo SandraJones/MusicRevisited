@@ -1,0 +1,24 @@
+{
+	"songs": [
+	{
+    "artist": "Todd Rundgren",
+    "album": "Wizard",
+    "genre": "Rock"
+	},
+  {
+    "artist": "Neil Young",
+    "album": "Rust Never Sleeps",
+    "genre": "Rock"
+	},
+  {
+    "artist": "Todd Rundgren",
+    "album": "Back to the Bars",
+    "genre": "Rock"
+	},
+  {
+    "artist": "Bad Company",
+    "album": "Bad Company",
+    "genre": "Rock"
+	}
+ ]
+}
