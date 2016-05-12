@@ -40,6 +40,42 @@
 				</div>
 			<div id="box">					
 				<div class="content1">
+				<!-- create a section that shows the list of music -->
+   			 <!-- this is the main area for version 2
+    		{Song name} by {Artist} on the album {Album} -->
+	      <div id="listOfMusic" class="musicListing">
+	        <h2>Song List</h2>
+	        <nav id="mainList ">
+	          <ol id="songListDom"> </ol>
+	        </nav>
+	        <button id="moreButton">More</button>
+	      </div>
+	<!-- Add a DOM element that contains some input fields for the user to enter in the name of a song, the artist for the song, and the album. -->
+			  <div id="addForm" class="hidden">
+			    <label for="addTitle">Song Name</label>
+			    <input id="addTitle" type="text" placeholder="add a title"/>
+			    <label for="addArtist">Artist</label>
+			    <input id="addArtist" type="text" placeholder="add an artist"/>
+			    <label for="addAlbum">Album</label>
+			    <input id="addAlbum" type="text" placeholder="add an album"/>
+			  </div>
+			</div>	
+		</section>						
+		<div id="add-view" class="hidden">
+			<article>		
+				<input id="Song" type="text" name="Song"/>Song</br>
+				<input id="Artist" type="text" name="Artist"/>Artist</br>
+				<input id="Album" type="text" name="Album"/>Album</br>
+			<button id="addBtn">Add</button>
+			</article>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+		<script src="songs.js"></script>
+		<script src="listMusicView.js"></script>
+		<script src="addMusicView.js"></script>
+	</body>
+</html>
+
 					<!-- <p class="para">Song Name</p>
 				</div>		
 				<article class="content2">
@@ -57,19 +93,3 @@
 				<article class="content2">
 					<p class="para">Bad Company  |  Bad Company  |  Rock</p>
 				</article> -->
-			</div>	
-		</section>						
-		<div id="add-view" class="hidden">
-			<article>		
-				<input id="Song" type="text" name="Song"/>Song</br>
-				<input id="Artist" type="text" name="Artist"/>Artist</br>
-				<input id="Album" type="text" name="Album"/>Album</br>
-			<button id="addBtn">Add</button>
-			</article>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
-		<script src="songs.js"></script>
-		<script src="listMusicView.js"></script>
-		<script src= "addMusicView.js"></script>
-	</body>
-</html>
