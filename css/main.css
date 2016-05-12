@@ -1,0 +1,49 @@
+body {
+  background-color: #fff000; }
+
+.hidden {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.navigation {
+  background-color: #FFB4B0;
+  border: 2px solid grey;
+  padding: 10px;
+  font-size: .8em;
+  height: 30px;
+  width: 93%; }
+
+#one {
+  display: inline-block; }
+
+#two {
+  display: inline-block; }
+
+label, select {
+  display: block; }
+
+fieldset {
+  background-color: #4DD7FA;
+  margin-right: 1em; }
+
+#box {
+  background-color: #FEFAC0;
+  border: 1px solid grey;
+  margin-left: 1em;
+  padding: 0em 0em 0em 1em;
+  display: inline-block;
+  width: 50%; }
+
+.options {
+  display: inline-block;
+  width: 40%; }
+
+.wrap {
+  display: flex; }
+
+#add-view {
+  position: absolute;
+  top: 200px;
+  left: 100px; }
