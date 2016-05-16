@@ -1,0 +1,24 @@
+{
+	"songs": [
+	{
+    "artist": "Pat Matheny",
+    "album": "CRS Song1",
+    "genre": "Jazz"
+	},
+  {
+    "artist": "Weather Report",
+    "album": "CRS Song2",
+    "genre": "Jazz"
+	},
+  {
+    "artist": "Boston",
+    "album": "Don't Look Back",
+    "genre": "Rock"
+	},
+  {
+    "artist": "Elton John",
+    "album": "Tiny Dancer",
+    "genre": "Pop"
+	}
+ ]
+}
