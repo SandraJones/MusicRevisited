@@ -4,9 +4,8 @@ $(document).ready(function() {
 
     let songArray = [];
 
-    // defaultView();
+   //adds ob
     function pushTracks(data) {
-            console.log(data);
             $.each(data, function(index, songObject){ 
             console.log("songObject", songObject);
             songArray.push(songObject);
@@ -15,7 +14,7 @@ $(document).ready(function() {
             displayTracks();
         };
 
-    //loop thru songArray
+    //load songs from firebase database
     $.ajax({
       url: "https://musichistorysandy.firebaseio.com/songs/.json",
         success: pushTracks
