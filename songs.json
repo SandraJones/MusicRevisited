@@ -1,24 +1,40 @@
 {
-	"songs": [
+	"songs": 
 	{
-    "artist": "Todd Rundgren",
-    "album": "Wizard",
-    "genre": "Rock"
-	},
-  {
-    "artist": "Neil Young",
-    "album": "Rust Never Sleeps",
-    "genre": "Rock"
-	},
-  {
-    "artist": "Todd Rundgren",
-    "album": "Back to the Bars",
-    "genre": "Rock"
-	},
-  {
-    "artist": "Bad Company",
-    "album": "Bad Company",
-    "genre": "Rock"
-	}
- ]
+      "song1": {     
+        "artist": "Todd Rundgren",
+        "album": "Wizard",
+        "genre": "Rock"
+    	},
+      "song2": {
+        "artist": "Neil Young",
+        "album": "Rust Never Sleeps",
+        "genre": "Rock"
+    	},
+      "song3": {
+        "artist": "Todd Rundgren",
+        "album": "Back to the Bars",
+        "genre": "Rock"
+    	},
+      "song4": {
+        "artist": "Bad Company",
+        "album": "Bad Company",
+        "genre": "Rock"
+       },
+      "song5": {
+        "artist": "Pat Matheny",
+        "album": "CRS Song1",
+        "genre": "Jazz"
+      },
+      "song6": {
+        "artist": "Weather Report",
+        "album": "CRS Song2",
+        "genre": "Jazz"
+        },
+      "song7": {
+        "artist": "Boston",
+        "album": "Don't Look Back",
+        "genre": "Rock"
+        }
+    } 
 }
