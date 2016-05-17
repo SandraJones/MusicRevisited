@@ -1,20 +1,12 @@
 "use strict";
 $(document).ready(function() {
-    
-
     let songObject = {};
 
-   //adds ob
+   //adds objects from load into songObject
     function pushTracks(data) {
-            // $.each(data, function(index, songObject){ 
-            // // console.log("songObject", songObject);
-            // songArray.push(songObject);
-            // });
-            // console.log("songArray", songArray);
-            songObject = data;
-            console.log("1stsongObject", songObject);
-            displayTracks();
-        };
+      songObject = data;
+      displayTracks();
+    };
 
 
     //load songs from firebase database
@@ -25,17 +17,15 @@ $(document).ready(function() {
       });
     };
     ajaxAllSongs();
+
+
     //put the songs onto the DOM
     function displayTracks() {
       $("#starterDom").html("");
       for (let songId in songObject){  
-        console.log("songId",songId );
         let currentSong = songObject[songId];
         $("#starterDom").append(`<li> ${currentSong.artist}   |   ${currentSong.album}   |   ${currentSong.genre}<Button id = "${songId}" class="delete">Delete</Button></li>`)
       }; 
-        // songObject.forEach(function(songObject) {
-        // console.log("songObject", songObject);                          
-        // };
     };    
 
 
@@ -45,8 +35,6 @@ $(document).ready(function() {
       additions.artist = $('#Artist').val(); 
       additions.album = $('#Album').val();
       additions.genre = $('#Song').val();
-      // console.log("additions", additions);
-      // songArray.push(additions);
       $.ajax ({
         url: "https://musichistorysandy.firebaseio.com/songs/.json",
         type: "POST",
@@ -71,9 +59,8 @@ $(document).ready(function() {
       $('#add-view').addClass("hidden");
     });
 
-
+     //listener for the delete button that is located on each song
     $('#starterDom').on("click", ".delete", function(event){
-      console.log("event", $(this).attr("id"));
       let clickedElement = $(this).attr("id");
       deleteSongFromFirebase(clickedElement);
     });
@@ -81,7 +68,6 @@ $(document).ready(function() {
 
     //delete song function to go back and delete the song from firebase
     function deleteSongFromFirebase(songObject) {
-      console.log("songObject", songObject);
       $.ajax ({
         url: "https://musichistorysandy.firebaseio.com/songs/" + songObject + ".json",
         type: "DELETE"
@@ -90,14 +76,3 @@ $(document).ready(function() {
       });
     };
 });
-
-//commented out since using firebase
-     // $("#moreButton").click(function() {
-     //        $.ajax({
-     //            url: "moreSongs.json",
-     //            success: pushTracks
-     //        });
-     //        $("#moreButton").hide();
-     //  });
-
-     //Event listeners for the add user input button
